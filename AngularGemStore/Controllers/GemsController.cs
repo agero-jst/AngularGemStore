@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using WebApplication1.Models;
+using AngularGemStore.Models;
 
-namespace WebApplication1.Controllers
+namespace AngularGemStore.Controllers
 {
     public class GemsController : ApiController
     {
