@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="store">
+<head>
+    <title>GemStore lab</title>
+
+    <link rel="stylesheet" href="app/libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/style/app.css" />
+
+    <script type="text/javascript" src="app/libs/angular.min.js"></script>
+    <script type="text/javascript" src="app/store.js"></script>
+    <script type="text/javascript" src="app/store-products.js"></script>
+    <script type="text/javascript" src="app/product-reviews.js"></script>
+</head>
+<body ng-controller="StoreController as store">
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="product in store.products">
+            <product-title></product-title>
+            <product-panels></product-panels>
+        </li>
+    </ul>
+</body>
+</html>
